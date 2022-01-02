@@ -1,7 +1,5 @@
 while True:
-      what=input("Выберите действие (+, -, /, *):")
-      if what.lower()==("+","-","/","*"):
-               break
+      what=input("Выберите действие (+, -, /, *):")  
       if what in ("+","-","/","*"):
         while True:
           try:       
@@ -20,14 +18,18 @@ while True:
         if what =="+":
                 c=a + b
                 print("Результат: " + str(c) )
+                break  
         elif what=="-":
                   c=a-b
                   print("Результат: " + str(c) )
+                  break  
         elif what=="/":
                   c=a/b
-                  print("Результат: " + str(c) )  
+                  print("Результат: " + str(c) )
+                  break    
         elif what=="*":
                   c=a*b
-                  print("Результат: " + str(c) )  
-        else:
-                print('неверно')
+                  print("Результат: " + str(c) )
+                  break  
+      else:
+        print('Неверное действие')      
